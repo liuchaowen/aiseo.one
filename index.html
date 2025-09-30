@@ -232,6 +232,111 @@
             box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
         }
 
+        /* Other Domains Section */
+        .other-domains-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .other-domains-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .other-domains-text {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            color: white;
+        }
+
+        .domains-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .domain-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .domain-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .domain-card:hover::before {
+            left: 100%;
+        }
+
+        .domain-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .domain-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .domain-name-card {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ffd700;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .domain-description {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            opacity: 0.9;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .domain-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #3373dc, #667eea);
+            color: white;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(51, 115, 220, 0.3);
+        }
+
+        .domain-card:hover .domain-btn {
+            background: linear-gradient(45deg, #667eea, #3373dc);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(51, 115, 220, 0.4);
+        }
+
         /* Footer */
         .footer {
             background: rgba(0, 0, 0, 0.2);
@@ -266,6 +371,27 @@
 
             .features {
                 grid-template-columns: 1fr;
+            }
+
+            .other-domains-section {
+                padding: 30px 20px;
+            }
+
+            .other-domains-title {
+                font-size: 2rem;
+            }
+
+            .domains-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .domain-card {
+                padding: 30px 20px;
+            }
+
+            .domain-name-card {
+                font-size: 1.5rem;
             }
         }
 
@@ -380,6 +506,29 @@
                         </div>
                     </div>
 
+                    <!-- Other Domains Section -->
+                    <div class="other-domains-section">
+                        <h2 class="other-domains-title">Other Premium Domains Available</h2>
+                        <p class="other-domains-text">Explore our collection of premium domains for your business</p>
+
+                        <div class="domains-grid">
+                            <div class="domain-card" onclick="window.open('https://xlap.top', '_blank')">
+                                <div class="domain-icon">💻</div>
+                                <h3 class="domain-name-card">xlap.top</h3>
+                                <p class="domain-description">Perfect for laptop, technology, and e-commerce businesses
+                                </p>
+                                <div class="domain-btn">Visit Site</div>
+                            </div>
+                            <div class="domain-card" onclick="window.open('https://aitools.uno', '_blank')">
+                                <div class="domain-icon">🛠️</div>
+                                <h3 class="domain-name-card">aitools.uno</h3>
+                                <p class="domain-description">Ideal for AI tools, software platforms, and tech solutions
+                                </p>
+                                <div class="domain-btn">Visit Site</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="cta-section">
                         <h2 class="cta-title">Interested in This Domain?</h2>
                         <p class="cta-text">Contact us today to discuss pricing and acquisition details</p>
@@ -429,6 +578,27 @@
                             <span class="feature-icon">💬</span>
                             <h3>AI对话时代</h3>
                             <p>拥抱全新的SEO时代 - 放弃搜索引擎，拥抱AI对话搜索</p>
+                        </div>
+                    </div>
+
+                    <!-- Other Domains Section -->
+                    <div class="other-domains-section">
+                        <h2 class="other-domains-title">其他优质域名</h2>
+                        <p class="other-domains-text">探索我们为您的业务精选的优质域名</p>
+
+                        <div class="domains-grid">
+                            <div class="domain-card" onclick="window.open('https://xlap.top', '_blank')">
+                                <div class="domain-icon">💻</div>
+                                <h3 class="domain-name-card">xlap.top</h3>
+                                <p class="domain-description">完美适合笔记本电脑、科技和电商业务</p>
+                                <div class="domain-btn">访问网站</div>
+                            </div>
+                            <div class="domain-card" onclick="window.open('https://aitools.uno', '_blank')">
+                                <div class="domain-icon">🛠️</div>
+                                <h3 class="domain-name-card">aitools.uno</h3>
+                                <p class="domain-description">理想的AI工具、软件平台和技术解决方案域名</p>
+                                <div class="domain-btn">访问网站</div>
+                            </div>
                         </div>
                     </div>
 
